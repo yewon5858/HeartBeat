@@ -14,10 +14,10 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
 
         //로딩화면 시작.
-        Loadingstart();
+        Loathings();
     }
-    private void Loadingstart(){
-        Handler handler=new Handler();
+    private void Loathings() {
+        Handler handler = new Handler();
         handler.postDelayed(new Runnable(){
             public void run(){
                 Intent intent=new Intent(getApplicationContext(), MainActivity.class);
