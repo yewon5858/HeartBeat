@@ -16,7 +16,7 @@
             android:layout_marginTop="75dp"
             android:layout_marginStart="48dp"
 
-            android:id="@+id/textView3"
+            android:id="@+id/PageMainText"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
             android:layout_marginStart="48dp"
             android:layout_marginTop="40dp"
 
-            android:id="@+id/checkBox1"
+            android:id="@+id/fever"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
         <CheckBox
             android:layout_marginStart="48dp"
 
-            android:id="@+id/checkBox2"
+            android:id="@+id/pain"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
         <CheckBox
             android:layout_marginStart="48dp"
 
-            android:id="@+id/checkBox3"
+            android:id="@+id/swelling"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         <CheckBox
             android:layout_marginStart="48dp"
 
-            android:id="@+id/checkBox4"
+            android:id="@+id/nausea"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
         <CheckBox
             android:layout_marginStart="48dp"
 
-            android:id="@+id/checkBox5"
+            android:id="@+id/headache"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
         <CheckBox
             android:layout_marginStart="48dp"
 
-            android:id="@+id/checkBox6"
+            android:id="@+id/fatigue"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
         <CheckBox
             android:layout_marginStart="48dp"
 
-            android:id="@+id/checkBox7"
+            android:id="@+id/allergy"
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
