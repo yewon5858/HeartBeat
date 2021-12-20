@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -8,14 +9,144 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="150dp">
+
+        <TextView
+            android:layout_marginTop="75dp"
+            android:layout_marginStart="20dp"
+
+            android:id="@+id/textView3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="건강 정보를 입력해주세요."
+            android:textSize="32dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+
+            android:id="@+id/checkBox1"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:buttonTint="#0084F1"
+
+            android:text="접종 후 열이 있었나요?"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+
+            android:id="@+id/checkBox2"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:buttonTint="#0084F1"
+
+            android:text="접종부위에 통증이 있었나요?"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+
+            android:id="@+id/checkBox3"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:buttonTint="#0084F1"
+
+            android:text="접종부위에 부기나 발적이 있었나요?"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+
+            android:id="@+id/checkBox4"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:buttonTint="#0084F1"
+
+            android:text="토하거나 메스꺼운 증상이 있었나요?"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+
+            android:id="@+id/checkBox5"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:buttonTint="#0084F1"
+
+            android:text="두통, 관절통, 근육통 등 통증이 있었나요?"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+
+            android:id="@+id/checkBox6"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:buttonTint="#0084F1"
+
+            android:text="피로감 있었나요?"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+
+            android:id="@+id/checkBox7"
+
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:buttonTint="#0084F1"
+
+            android:text="알레르기 반응이 있었나요? \n(예: 두드러기, 발진, 손이나 얼굴 부기 등)"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
 
         <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+
             android:id="@+id/button"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            />
+            android:layout_width="300dp"
+
+            android:layout_height="60dp"
+
+            android:backgroundTint="#0084F1"
+
+            android:text="건강 정보 제출"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
