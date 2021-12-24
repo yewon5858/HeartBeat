@@ -5,33 +5,38 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+
+        android:id="@+id/Check_Page"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="건강 정보를 입력해주세요."
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/checklist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525" />
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/checklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="150dp">
 
-        <TextView
-            android:layout_marginTop="75dp"
-            android:layout_marginStart="48dp"
-
-            android:id="@+id/PageMainText"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:text="건강 정보를 입력해주세요."
-            android:textSize="25dp"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
+        app:layout_constraintBottom_toTopOf="@+id/submission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Check_Page"
+        app:layout_constraintVertical_bias="0.4">
 
         <CheckBox
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="40dp"
-
             android:id="@+id/fever"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
@@ -42,8 +47,6 @@
             android:textSize="15dp" />
 
         <CheckBox
-            android:layout_marginStart="48dp"
-
             android:id="@+id/pain"
 
             android:layout_width="wrap_content"
@@ -56,8 +59,6 @@
             android:textSize="15dp" />
 
         <CheckBox
-            android:layout_marginStart="48dp"
-
             android:id="@+id/swelling"
 
             android:layout_width="wrap_content"
@@ -70,8 +71,6 @@
             android:textSize="15dp" />
 
         <CheckBox
-            android:layout_marginStart="48dp"
-
             android:id="@+id/nausea"
 
             android:layout_width="wrap_content"
@@ -84,8 +83,6 @@
             android:textSize="15dp" />
 
         <CheckBox
-            android:layout_marginStart="48dp"
-
             android:id="@+id/headache"
 
             android:layout_width="wrap_content"
@@ -98,8 +95,6 @@
             android:textSize="15dp" />
 
         <CheckBox
-            android:layout_marginStart="48dp"
-
             android:id="@+id/fatigue"
 
             android:layout_width="wrap_content"
@@ -112,8 +107,6 @@
             android:textSize="15dp" />
 
         <CheckBox
-            android:layout_marginStart="48dp"
-
             android:id="@+id/allergy"
 
             android:layout_width="wrap_content"
@@ -125,22 +118,24 @@
             android:text="알레르기 반응이 있었나요? \n(예: 두드러기, 발진, 손이나 얼굴 부기 등)"
             android:textSize="15dp" />
 
-        <Button
-            android:layout_gravity="center"
-            android:layout_marginTop="100dp"
-
-            android:id="@+id/button"
-            android:layout_width="300dp"
-
-            android:layout_height="60dp"
-
-            android:backgroundTint="#0084F1"
-
-            android:text="건강 정보 제출"
-            android:textSize="16dp"
-            android:textStyle="bold" />
-
-
     </LinearLayout>
+
+    <Button
+        android:id="@+id/submission"
+        android:layout_width="300dp"
+
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+
+        android:backgroundTint="#0084F1"
+
+        android:text="건강 정보 제출"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checklist"
+        app:layout_constraintVertical_bias="0.525" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

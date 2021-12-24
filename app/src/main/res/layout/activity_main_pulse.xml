@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Main1_Page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Heart Beat"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@+id/Page_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/Page_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Pulse"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+
+            android:text="심전도 측정"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#F9F9FA"
+
+            android:backgroundTint="#0084F1"/>
+
+        <Button
+            android:id="@+id/Vaccine"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:text="백신 현황"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#A2A0A8"
+
+            android:backgroundTint="#E8E8E8"/>
+
+        <Button
+            android:id="@+id/SideEffect"
+            android:layout_width="110dp"
+            android:layout_height="55dp"
+
+            android:text="부작용 예상"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#A2A0A8"
+
+            android:backgroundTint="#E8E8E8"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
