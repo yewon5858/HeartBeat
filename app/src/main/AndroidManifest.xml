@@ -11,7 +11,7 @@
         android:theme="@style/Theme.HeartBeat">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".Main_Pulse_Activity"
             android:exported="false"/>
 
         <activity

@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
 
-        app:layout_constraintBottom_toTopOf="@id/graph_title"
+        app:layout_constraintBottom_toTopOf="@id/vaccine_graph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Main_title">
@@ -36,12 +36,12 @@
             android:layout_width="110dp"
             android:layout_height="55dp"
 
-            android:backgroundTint="#0084F1"
             android:text="심전도 측정"
-            android:textColor="#F9F9FA"
             android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#A2A0A8"
 
-            android:textStyle="bold" />
+            android:backgroundTint="#E8E8E8"/>
 
         <Button
             android:id="@+id/Vaccine"
@@ -51,83 +51,71 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
 
-            android:backgroundTint="#E8E8E8"
             android:text="백신 현황"
-            android:textColor="#A2A0A8"
             android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#F9F9FA"
 
-            android:textStyle="bold" />
+            android:backgroundTint="#0084F1"/>
 
         <Button
             android:id="@+id/SideEffect"
             android:layout_width="110dp"
             android:layout_height="55dp"
 
-            android:backgroundTint="#E8E8E8"
             android:text="부작용 예상"
-            android:textColor="#A2A0A8"
             android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#A2A0A8"
 
-            android:textStyle="bold" />
+            android:backgroundTint="#E8E8E8"/>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/graph_title"
-        android:layout_width="140dp"
-        android:layout_height="30dp"
+    <LinearLayout
+        android:id="@+id/vaccine_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
 
-        android:layout_marginStart="40dp"
-
-        android:background="@drawable/graph_title_layout"
-        android:gravity="center"
-        android:text="● 심전도 측정 결과"
-
-        android:textColor="#15141F"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/pulse_graph"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Page_Button" />
-
-    <Button
-        android:id="@+id/plus_button"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-
-        android:layout_marginEnd="40dp"
-        android:backgroundTint="#0084F1"
-        android:text="+"
-        android:textColor="#F9F9FA"
-
-        android:textSize="12dp"
-
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/pulse_graph"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Page_Button" />
-
-    <ImageView
-        android:id="@+id/pulse_graph"
-        android:layout_width="325dp"
-        android:layout_height="225dp"
-        app:srcCompat="@drawable/graph"
-
-        app:layout_constraintBottom_toTopOf="@+id/analysis"
+        app:layout_constraintBottom_toTopOf="@+id/vac_issue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plus_button" />
+        app:layout_constraintTop_toBottomOf="@id/Page_Button" >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+
+            app:srcCompat="@drawable/vac_1st" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+
+            android:layout_marginStart="45dp"
+
+            app:srcCompat="@drawable/vac_2nd" />
+
+    </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/analysis"
+        android:id="@+id/vac_issue"
         android:layout_width="325dp"
-        android:layout_height="250dp"
+        android:layout_height="300dp"
         android:orientation="vertical"
 
         android:background="@drawable/issue_layout"
 
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pulse_graph">
+        app:layout_constraintTop_toBottomOf="@id/vaccine_graph">
 
         <Button
             android:id="@+id/See_all"
@@ -138,12 +126,13 @@
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
 
-            android:text="결과 더보기"
+            android:text="기사 더보기"
             android:textStyle="bold"
             android:textSize="11dp"
             android:textColor="#0084F1"
 
             android:backgroundTint="#E8E8E8"/>
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
