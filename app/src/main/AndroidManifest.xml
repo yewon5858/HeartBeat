@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HeartBeat">
         <activity
-            android:name=".SignUpActivity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
