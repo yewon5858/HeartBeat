@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "737930326064",
+    "firebase_url": "https://heartbeat-89dcb-default-rtdb.firebaseio.com",
+    "project_id": "heartbeat-89dcb",
+    "storage_bucket": "heartbeat-89dcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737930326064:android:bd5a58f7c1e7840558bdf5",
+        "android_client_info": {
+          "package_name": "com.example.heartbeat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737930326064-1elkq1s6m22i25eocfhfcs7i98vnvon5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.heartbeat",
+            "certificate_hash": "50da1589864ae31abd0c5a53fab4b7ee91b26f68"
+          }
+        },
+        {
+          "client_id": "737930326064-91fgmemt25bfdvmmomfefh8l8gfth3a6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.heartbeat",
+            "certificate_hash": "4f61e4b44e93dcf5d8ef9084cd1ef9706c847fae"
+          }
+        },
+        {
+          "client_id": "737930326064-q42fehcc7345tbo1ltfg31ej0a90dol6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPFa7lmUz4hwtnYPoLkdi9gphc40spgd8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737930326064-q42fehcc7345tbo1ltfg31ej0a90dol6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
